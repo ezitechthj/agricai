@@ -9,7 +9,7 @@ from streamlit_chat import message
 # The 'openai.api_type' is set to 'azure' to indicate that the API is being used with Azure OpenAI Service.
 openai.api_type = "azure"
 # The 'openai.api_base' is set to the base URL for the Azure OpenAI Service resource.
-openai.api_base = "https://PLEASE_ENTER_YOUR_OWN_AOAI_RESOURCE_NAME.openai.azure.com/"
+openai.api_base = "https://r-openai-illovo.openai.azure.com/"
 # The 'openai.api_version' is set to the API version for the Azure OpenAI Service resource.
 # https://github.com/Azure/azure-rest-api-specs/blob/main/specification/cognitiveservices/data-plane/AzureOpenAI/inference/preview/2023-03-15-preview/inference.json
 openai.api_version = "2023-03-15-preview"
@@ -51,7 +51,7 @@ def generate_response(prompt):
     st.session_state['prompts'].append({"role": "user", "content":prompt})
     # The 'openai.ChatCompletion.create' function is used to generate a response from the AI model.
     completion=openai.ChatCompletion.create(
-        engine="PLEASE_ENTER_YOUR_OWN_AOAI_GPT35_TURBO_DEPLOYMENT_NAME", # The 'engine' parameter specifies the name of the OpenAI GPT-3.5 Turbo engine to use.
+        engine="dep-gpt35t-illovo", # The 'engine' parameter specifies the name of the OpenAI GPT-3.5 Turbo engine to use.
         temperature=0.7, # The 'temperature' parameter controls the randomness of the response.
         max_tokens=512, # The 'max_tokens' parameter controls the maximum number of tokens in the response.
         top_p=0.95, # The 'top_p' parameter controls the diversity of the response.
