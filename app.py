@@ -20,7 +20,7 @@ openai.api_key = "c2aa17f465c94d25b774191870198f95"
 
 # Streamlit to set the page header and icon.
 st.set_page_config(
-        page_title="Robo Minion",
+        page_title="Illvo",
         page_icon="🤖",
     )
 
@@ -29,7 +29,7 @@ col1, col2 = st.columns([1,2])
 with col1:
     st.image("./images/robo_minion_icon_v1.png", width=200)
 with col2:
-    st.title("Robo Minion 🤖")
+    st.title("Illovo AI 🤖")
     st.header("Powered by AOAI - GPT 3.5 Turbo 🚀")
 
 # Initializes the Streamlit session state with default values for the 'prompts', 'generated', 'past'.
