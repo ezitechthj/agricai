@@ -14,7 +14,7 @@ openai.api_base = "https://r-openai-illovo.openai.azure.com/"
 # https://github.com/Azure/azure-rest-api-specs/blob/main/specification/cognitiveservices/data-plane/AzureOpenAI/inference/preview/2023-03-15-preview/inference.json
 openai.api_version = "2023-03-15-preview"
 # The 'openai.api_key' is set to the API key manually retrieved from the Azure OpenAI Service resource.
-openai.api_key = "c2aa17f465c94d25b774191870198f95"
+openai.api_key = "afaf3c1c9c3c4876ac3a7189d3c3e16f"
 # The 'openai.api_key' is set to the API key retrieved from the Streamlit secrets manager.
 # openai.api_key = st.secrets["AOAI_API_KEY"]
 
